@@ -1,72 +1,44 @@
-# Dungeons and Dragons Character Creation Program
+# Module 05 Lab Assignment 2: Abstract Class Creation
 
-Welcome to the Dungeons and Dragons Character Creation Program! This console application allows you to create a character for your Dungeons and Dragons adventures. Follow the prompts to input your character's information, including name, age, gender, race, class, and starting level.
+## Description
 
-## Getting Started
+This code represents a character creation program for Dungeons and Dragons (D&D). It allows you to create a character by selecting a name, age, gender, race, and class for your D&D adventure. The program provides information about the selected character's attributes and abilities based on the chosen class.
 
-To use this program, simply run the `DungeonsDragons` application in your preferred C# development environment. Follow the on-screen prompts to create your character.
+## Instructions
 
-## Character Information
+1. **Character Information**
+    - Enter your character's name, age, and gender as prompted.
+    - Select your character's race from the options provided.
+    
+2. **Character Class Selection**
+    - Choose a character class from the available options.
+    - Each class has unique attributes and abilities.
+    - Some classes (Fighter and Paladin) have additional choices to make.
 
-### Name
-Enter your character's name when prompted. This will be used throughout the program.
+3. **Fighter and Paladin Class Options**
+    - If you choose Fighter or Paladin, you will be prompted to make further selections, such as deity, divine spells, and healing abilities.
 
-### Age
-Specify your character's age as an integer.
+4. **Character Creation**
+    - The program will display your character's information, including race, class, and any additional choices you made.
 
-### Gender
-Enter your character's gender when prompted.
+5. **Repeat or End**
+    - You can create multiple characters or end the program by pressing '0' when prompted for class selection.
 
-### Race
-Choose your character's race from the following options:
-1. Dragonborn
-2. Dwarf
-3. Elf
-4. Gnome
-5. Half-Elf
-6. Halfling
-7. Half-Orc
-8. Human
-9. Tiefling
+## Class Structure
 
-## Class
-Choose your character's class from the following options:
-1. Barbarian
-2. Bard
-3. Cleric
-4. Druid
-5. Fighter
-6. Monk
-7. Paladin
-8. Ranger
-9. Rogue
-10. Sorcerer
-11. Warlock
-12. Wizard
+- `CharacterInfo` (Abstract Class): Defines abstract methods for Fighter and Paladin classes.
+- `Second` (Derived Class): Implements Fighter and Paladin methods.
+- `Fighter`, `Wizard`, `Paladin` (Derived Classes): Define additional attributes specific to their respective classes.
+- `Character` (Main Class): Contains the main program logic, character creation process, and user interaction.
 
-## Character Creation
+## How to Run
 
-Once you've entered all the necessary information, your character's details will be displayed, including their name, age, gender, race, and class.
+To run this program, compile and execute the code in a C# development environment that supports .NET.
 
-## Example Usage
+Enjoy creating your D&D characters with this character creation program! Have fun in your adventures in the world of Dungeons and Dragons!
 
-Here's an example of how to use the program:
+For any questions or issues, please contact [Rowan Stratton].
 
-1. Enter your character's name: [Enter your character's name]
-2. Enter the age of [character's name]: [Enter character's age]
-3. Enter your name: [Enter your name]
-4. Enter [character's name]'s starting level: [Enter starting level]
-5. Enter [character's name]'s gender: [Enter gender]
-6. Select [character's name]'s race: [Enter the corresponding number for your chosen race]
-7. Select [character's name]'s class: [Enter the corresponding number for your chosen class]
+---
 
-Your character's information will be displayed as follows:
-```
-[Character's name] will be a [Race] [Class]
-```
-
-## Note
-
-This program does not handle validation for input values, so make sure to enter valid data when prompted.
-
-Enjoy creating your Dungeons and Dragons character!
+**Note**: This README provides an overview of the code and instructions for using it. Please ensure that you have the necessary development environment set up to run the code successfully.
